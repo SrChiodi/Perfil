@@ -20,6 +20,8 @@ body {
 }
 .terminal p, table{
     padding-left: 2.5em;
+    padding-bottom: 1vw;
+
 }
 .dig {
     display: flex;
