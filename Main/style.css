@@ -1,55 +1,62 @@
+:root {
+    --vd: #0f0;
+}
 html {
-    background-color: #000;
-    /* color: #0f0; */
+    background-color: black;
     font-family: monospace;
-    padding: 20px;
+    padding: 1vw;
 }
 
 body {
     padding: 3% 2%;
-    border: 1px solid #0f0;
+    border: 1px solid var(--vd);
 }
 .terminal {
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    color: #00FF00;
+    color: var(--vd);
+    font-size: 1vw;
 }
-.terminal p{
+.terminal p, table{
     padding-left: 2.5em;
 }
-.pt1-perfil p {
-    animation: cor 1s;
-}
-.pt1-perfil {
+.dig {
     display: flex;
-    overflow: hidden;
     animation-name: digitar;
+    animation-fill-mode: both;
+    overflow: hidden;
+}
+/* .pt1-perfil {
     animation-duration: 7s;
 }
 .pt2-hardsk {
-    display: flex;
-    animation-name: digitar;
     animation-duration: 7s;
     animation-delay: 3s;
-    overflow: hidden;
 }
 .pt2-hardsk p{
     animation-name: cor;
     animation-delay: 3s;
     animation-fill-mode: both;
+} */
+.pt3-xp {
+    flex-direction: column;
 }
-.prompt {
-    font-weight: bold;
-    min-width: 150px; 
-    margin-right: 10px;
+.pt3-xp p{
+    animation-duration: 7s;
+    /* animation-delay: 6s; */
+}
+.pt3-xp table {
+    animation-duration: 7s;
+    /* animation-delay: 9s; */
+    
 }
 @keyframes digitar {
     from {
         width: 0;
     }
     to {
-        width: 90%;
+        width: 90vw;
     }
 }
 @keyframes cor {
@@ -57,6 +64,6 @@ body {
         color: transparent;
     }
     to {
-        color: #00FF00; 
+        color: var(--vd); 
     }
 }
