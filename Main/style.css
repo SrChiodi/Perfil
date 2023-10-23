@@ -27,7 +27,7 @@ body {
     animation-fill-mode: both;
     overflow: hidden;
 }
-/* .pt1-perfil {
+.pt1-perfil {
     animation-duration: 7s;
 }
 .pt2-hardsk {
@@ -38,18 +38,26 @@ body {
     animation-name: cor;
     animation-delay: 3s;
     animation-fill-mode: both;
-} */
+}
 .pt3-xp {
     flex-direction: column;
 }
 .pt3-xp p{
     animation-duration: 7s;
-    /* animation-delay: 6s; */
+    animation-delay: 6s;
 }
 .pt3-xp table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 1.5vw .7vw;
     animation-duration: 7s;
-    /* animation-delay: 9s; */
-    
+    animation-delay: 9s;
+}
+.pt4-obj {
+    flex-direction: row;
+    animation-duration: 7s;
+    animation-delay: 12s; 
+    /* quebra de linha ainda está errada */
 }
 @keyframes digitar {
     from {
@@ -57,13 +65,5 @@ body {
     }
     to {
         width: 90vw;
-    }
-}
-@keyframes cor {
-    from{
-        color: transparent;
-    }
-    to {
-        color: var(--vd); 
     }
 }
