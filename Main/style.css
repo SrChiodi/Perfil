@@ -1,0 +1,62 @@
+html {
+    background-color: #000;
+    /* color: #0f0; */
+    font-family: monospace;
+    padding: 20px;
+}
+
+body {
+    padding: 3% 2%;
+    border: 1px solid #0f0;
+}
+.terminal {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    color: #00FF00;
+}
+.terminal p{
+    padding-left: 2.5em;
+}
+.pt1-perfil p {
+    animation: cor 1s;
+}
+.pt1-perfil {
+    display: flex;
+    overflow: hidden;
+    animation-name: digitar;
+    animation-duration: 7s;
+}
+.pt2-hardsk {
+    display: flex;
+    animation-name: digitar;
+    animation-duration: 7s;
+    animation-delay: 3s;
+    overflow: hidden;
+}
+.pt2-hardsk p{
+    animation-name: cor;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+.prompt {
+    font-weight: bold;
+    min-width: 150px; 
+    margin-right: 10px;
+}
+@keyframes digitar {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+@keyframes cor {
+    from{
+        color: transparent;
+    }
+    to {
+        color: #00FF00; 
+    }
+}
