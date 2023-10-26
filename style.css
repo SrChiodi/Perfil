@@ -14,58 +14,22 @@ body {
 .terminal {
     display: flex;
     flex-direction: column;
-    white-space: nowrap;
+    padding-left: 2.5em;
     color: var(--vd);
     font-size: 1vw;
 }
-.terminal p, table{
-    padding-left: 2.5em;
+.terminal p{
     padding-bottom: 1vw;
-
 }
-.dig {
-    display: flex;
-    animation-name: digitar;
-    animation-fill-mode: both;
-    overflow: hidden;
+.terminal span {
+    font-style: oblique;
+    text-decoration: underline;
 }
-.pt1-perfil {
-    animation-duration: 7s;
-}
-.pt2-hardsk {
-    animation-duration: 7s;
-    animation-delay: 3s;
-}
-.pt2-hardsk p{
-    animation-name: cor;
-    animation-delay: 3s;
-    animation-fill-mode: both;
-}
-.pt3-xp {
-    flex-direction: column;
-}
-.pt3-xp p{
-    animation-duration: 7s;
-    animation-delay: 6s;
-}
-.pt3-xp table {
+.terminal table {
     width: 100%;
-    border-collapse: separate;
+    padding: 2%;
     border-spacing: 1.5vw .7vw;
-    animation-duration: 7s;
-    animation-delay: 9s;
 }
-.pt4-obj {
-    flex-direction: row;
-    animation-duration: 7s;
-    animation-delay: 12s; 
-    /* quebra de linha ainda está errada */
-}
-@keyframes digitar {
-    from {
-        width: 0;
-    }
-    to {
-        width: 90vw;
-    }
+.terminal table td tr {
+    width: 10vw;
 }
